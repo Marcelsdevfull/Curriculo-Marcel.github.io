@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Marcel Ambrosio</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #333; /* Fundo escuro para destacar animação */
+            color: white;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            width: 100%; /* Corrige corte do nome e foto */
+            max-width: 1200px; /* Limite máximo de largura */
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem; /* Aumenta o tamanho da fonte */
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            text-align: center; /* Centraliza as palavras "Sobre Mim" e "Certificados" */
+        }
+
+        .profile-pic {
+            width: 200px; /* Aumentar o tamanho da foto */
+            height: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .certificates {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .certificate-item {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .certificate-item img {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+
+        .certificates a {
+            display: block;
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .certificates a:hover {
+            color: #00FFFF;
+        }
+
+        .trofeu img {
+            width: 150px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Animação de fundo de programação */
+        .background-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            z-index: 0;
+            overflow: hidden;
+            opacity: 0.1;
+        }
+
+        .code-line {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            color: lime;
+            position: absolute;
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateY(100vh);
+            }
+            100% {
+                transform: translateY(-100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-animation">
+        <!-- Exemplo de linhas de código flutuantes -->
+        <div class="code-line" style="left: 10%; animation-duration: 2s;">for (let i = 0; i < 10; i++) { console.log(i); }</div>
+        <div class="code-line" style="left: 40%; animation-duration: 2s;">function helloWorld() { return 'Hello, World!'; }</div>
+        <div class="code-line" style="left: 70%; animation-duration: 6s;">if (user.isAuthenticated()) { accessGranted(); }</div>
+        <div class="code-line" style="left: 30%; animation-duration: 4s;">throw new Error('Something went wrong');</div>
+        <div class="code-line" style="left: 60%; animation-duration: 7s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 20%; animation-duration: 2s;">HTTP 500: Internal Server Error</div>
+        <div class="code-line" style="left: 10%; animation-duration: 7s;">for (let i = 0; i < 10; i++) { console.log(i); }</div>
+        <div class="code-line" style="left: 40%; animation-duration: 3s;">function helloWorld() { return 'Hello, World!'; }</div>
+        <div class="code-line" style="left: 70%; animation-duration: 2s;">if (user.isAuthenticated()) { accessGranted(); }</div>
+        <div class="code-line" style="left: 30%; animation-duration: 4s;">throw new Error('Something went wrong');</div>
+        <div class="code-line" style="left: 60%; animation-duration: 7s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 60%; animation-duration: 2s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 60%; animation-duration: 3s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 60%; animation-duration: 3s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 60%; animation-duration: 3s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 60%; animation-duration: 3s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 60%; animation-duration: 3s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 20%; animation-duration: 5s;">HTTP 500: Internal Server Error</div>
+        <div class="code-line" style="left: 10%; animation-duration: 8s;">for (let i = 0; i < 10; i++) { console.log(i); }</div>
+        <div class="code-line" style="left: 40%; animation-duration: 6s;">function helloWorld() { return 'Hello, World!'; }</div>
+        <div class="code-line" style="left: 70%; animation-duration: 6s;">if (user.isAuthenticated()) { accessGranted(); }</div>
+        <div class="code-line" style="left: 30%; animation-duration: 7;">throw new Error('Something went wrong');</div>
+        <div class="code-line" style="left: 60%; animation-duration: 7s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 20%; animation-duration: 6s;">HTTP 500: Internal Server Error</div>
+        <div class="code-line" style="left: 10%; animation-duration: 3s;">for (let i = 0; i < 10; i++) { console.log(i); }</div>
+        <div class="code-line" style="left: 40%; animation-duration: 4s;">function helloWorld() { return 'Hello, World!'; }</div>
+        <div class="code-line" style="left: 70%; animation-duration: 2s;">if (user.isAuthenticated()) { accessGranted(); }</div>
+        <div class="code-line" style="left: 60%; animation-duration: 3s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 60%; animation-duration: 3s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 60%; animation-duration: 1s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 60%; animation-duration: 3s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 60%; animation-duration: 3s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 60%; animation-duration: 1s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 60%; animation-duration: 3s;">HTTP 400: Bad Request</div>
+        <div class="code-line" style="left: 20%; animation-duration: 2s;">HTTP 500: Internal Server Error</div>
+    </div>
+
+    <div class="container">
+        <h2>Marcel Ambrosio</h2>
+
+        <div class="section">
+            <img src="sua-foto.jpg" alt="Foto do Perfil" class="profile-pic">
+            <h2>Sobre Mim</h2>
+            <p>Desenvolvedor Fullstack apaixonado por tecnologia, com experiência em diversas linguagens e frameworks, incluindo HTML, CSS, JavaScript (ES6+), Node.js, React, Progress 4GL, e bancos de dados SQL e NoSQL. Tenho habilidades em desenvolvimento front-end e back-end, além de integração de APIs e desenvolvimento de aplicações complexas.</p>
+            <p>Você pode conferir meus projetos e contribuições no meu perfil do <a href="https://github.com/Marcelsdevfull" target="_blank" style="color: #FFD700; text-decoration: none; font-weight: bold;">GitHub</a>.</p>
+        </div>
+
+        <div class="section">
+            <h2>Certificados</h2>
+            <div class="certificates">
+                <div class="certificate-item">
+                    <img src="certificado-icon.png" alt="Certificado 1">
+                    <a href="certificado 1.pdf" target="_blank">Projeto - Smart Money</a>
+                </div>
+                <div class="certificate-item">
+                    <img src="certificado-icon.png" alt="Certificado 11">
+                    <a href="certificado 11.pdf" target="_blank">Projeto - Criando um PWA de Scanner</a>
+                </div>
+                <div class="certificate-item">
+                    <img src="certificado-icon.png" alt="Certificado 8">
+                    <a href="certificado 8.pdf" target="_blank">Projeto - Gerador de senha</a>
+                </div>
+                <div class="certificate-item">
+                    <img src="certificado-icon.png" alt="Certificado 4">
+                    <a href="certificado 4.pdf" target="_blank">Projeto - Ping-Pong</a>
+                </div>
+                <div class="certificate-item">
+                    <img src="certificado-icon.png" alt="Certificado 5">
+                    <a href="certificado 5.pdf" target="_blank">Projeto - Pedido Online</a>
+                </div>
+                <div class="certificate-item">
+                    <img src="certificado-icon.png" alt="Certificado 6">
+                    <a href="certificado 6.pdf" target="_blank">Projeto Admin (Node.je e React)</a>
+                </div>
+                <div class="certificate-item">
+                    <img src="certificado-icon.png" alt="Certificado 7">
+                    <a href="certificado 7.pdf" target="_blank">Projeto - API de envio para WhatsApp (Node.js)</a>
+                </div>
+                <div class="certificate-item">
+                    <img src="certificado-icon.png" alt="Certificado 3">
+                    <a href="certificado 3.pdf" target="_blank">Certificado - Node.js Avançado</a>
+                </div>
+                <div class="certificate-item">
+                    <img src="certificado-icon.png" alt="Certificado 9">
+                    <a href="certificado 9.pdf" target="_blank">Certificado - JavaScript Avançado</a>
+                </div>
+                <div class="certificate-item">
+                    <img src="certificado-icon.png" alt="Certificado 10">
+                    <a href="certificado 10.pdf" target="_blank">Certificado - Lógica de Programação Avançada</a>
+                </div>
+                <div class="certificate-item">
+                    <img src="certificado-icon.png" alt="Certificado 2">
+                    <a href="certificado 2.pdf" target="_blank">Certificado - Banco de Dados Avançado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 - Marcel Ambroisio DevFull. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>
